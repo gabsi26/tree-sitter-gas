@@ -152,7 +152,7 @@ module.exports = grammar({
     register: $ => /%[a-zA-Z][a-zA-Z0-9]*/,
 
     comment: $ => choice(
-      seq("//", repeat(/./), $.eol),
+      /\/\/.*^/,
       seq('/*', repeat(choice(/./, $._eol)), '*/')
     ),
 
