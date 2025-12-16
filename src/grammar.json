@@ -822,7 +822,7 @@
               },
               {
                 "type": "PATTERN",
-                "value": ".*"
+                "value": ".*(\\r\\n|\\n\\r|\\n|\\r)"
               }
             ]
           }
